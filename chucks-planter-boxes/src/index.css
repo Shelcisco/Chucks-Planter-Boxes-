@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hp{
+  
+  background-color: #ecf0ef;
+}
+
+
+/* NAVBAR  */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  
+  background-color:rgb(214, 229, 214);
+  overflow: hidden;
+  position: fixed;
+  top: 0; /* Add this line to ensure it sticks to the top */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #090909;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+  margin-top: 5px; /* Adjust this value as needed */
+ 
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(42, 41, 41);
+
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: rgb(18, 17, 17);
+}
+
+/* HOMEPAGE */
+
+.home {
+  padding-top: 5%;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  position:fixed;
+  left:0;
+  bottom:0;
+  width: 100%;
+}
+
+/* CONTACT FORM */
+
+.contact {
+  color: var(--g1);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: Segoe Script;
+
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+form .form-group {
+  display: block;
+  width: 100%;
+  margin: 0.625rem 0;
+}
+
+form .form-input,
+form .form-textarea {
+  display: inline-block;
+  margin-left: 0;
+}
+
+
+form .form-input {
+  width: 40%;
+  padding: 0.75rem;
+  color: var(--g5);
+  background-color: var(--g1);
+  font-size: 1.2rem;
+  border: 1px solid var(--g4);
+  border-radius: 0.3rem;
+}
+
+.error{
+  color: red;
+}
+
+.btn {
+  text-align: center;
+  width: 10%;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: var(--g2);
+  color: var(--g5);
+  text-decoration: none;
+  margin: 0.5rem 0.5rem;
+
+ display:inline-block;
+}
