@@ -126,3 +126,77 @@ form .form-input {
 
  display:inline-block;
 }
+
+
+/* SLIDESHOW */
+
+
+.Announce {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slideshow-container {
+  max-width: 500px; /* Adjust width as needed */
+  margin: 0 auto;
+  border: 1px solid #ccc; /* Border style */
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  overflow: hidden;
+  position: relative;
+}
+
+.announcement {
+  text-align: center;
+  width: 100%;
+}
+
+.announcement p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.announcement img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.arrow.left {
+  left: 5px;
+}
+
+.arrow.right {
+  right: 5px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
