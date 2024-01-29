@@ -278,9 +278,7 @@ function Gallery() {
         <p>Stencils</p>
         <div className="slideshow-container">
           <div className="slideshow-box">
-            <button className="arrow left" onClick={() => goToStencil(currentStencilIndex - 1)}>
-              &#10094;
-            </button>
+          
             <div className="slideshow">
               <div className="announcement">
                 <p>{stencils[currentStencilIndex].text}</p>
@@ -291,6 +289,9 @@ function Gallery() {
                 />
               </div>
             </div>
+            <button className="arrow left" onClick={() => goToStencil(currentStencilIndex - 1)}>
+              &#10094;
+            </button>
             <button className="arrow right" onClick={() => goToStencil(currentStencilIndex + 1)}>
               &#10095;
             </button>
