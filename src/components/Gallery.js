@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import "../styles/Gallery.css"; // Create this CSS file for styling
-// import imageCompression from "rowser-image-compression";
+
 
 
 import B1 from "../assets/1.png"
@@ -56,14 +55,9 @@ import B40 from "../assets/40.png"
 
 
 function Gallery() {
-  // const [compressedImages, setCompressedImages] = useState([]);
-  
 
-  // const images = useMemo(
-  //   () => [FIRST,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,35,36,37,38,39,40,41,42,43,44,45,46,47,48],
-  //   []
 
-    const announcements = [
+    const stencils = [
       {
         text: "1",
         image: B1,
@@ -258,54 +252,55 @@ function Gallery() {
       // Add more ojects as needed
     ];
   
-    const [currentAnnouncementIndex, setCurrentAnnouncementIndex] = useState(0);
-  
-    const goToNextAnnouncement = () => {
-      setCurrentAnnouncementIndex((prevIndex) =>
-        prevIndex === announcements.length - 1 ? 0 : prevIndex + 1
-      );
+    const [currentStencilIndex, setCurrentStencilIndex] = useState(0);
+
+    const goToStencil = (index) => {
+      setCurrentStencilIndex(index);
     };
   
-    const goToPrevAnnouncement = () => {
-      setCurrentAnnouncementIndex((prevIndex) =>
-        prevIndex === 0 ? announcements.length - 1 : prevIndex - 1
-      );
+    const generatePreviewImages = () => {
+      const startIndex = Math.max(0, currentStencilIndex - 5);
+      const endIndex = Math.min(stencils.length - 1, startIndex + 11);
+  
+      return stencils.slice(startIndex, endIndex + 1).map((stencil, index) => (
+        <img
+          key={startIndex + index}
+          src={stencil.image}
+          alt={`preview_image_${startIndex + index}`}
+          className={`preview-image ${startIndex + index === currentStencilIndex ? "active" : ""}`}
+          onClick={() => goToStencil(startIndex + index)}
+        />
+      ));
     };
   
-    useEffect(() => {
-      const interval = setInterval(goToNextAnnouncement, 3000); // Change slide every 3 seconds (adjust as needed)
-  
-      return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
-  
-
-
-  return (
- <div clasNAme="">
-  <div className="Announce">
-<p>Announcements</p>
-<div className="slideshow-container">
-        <div className="slideshow-ox">
-          <div className="slideshow">
-            <div className="announcement">
-              <p>{announcements[currentAnnouncementIndex].text}</p>
-              <img
-                src={announcements[currentAnnouncementIndex].image}
-                alt="announcement_image"
-              />
+    return (
+      <div className="Announce">
+        <p>Stencils</p>
+        <div className="slideshow-container">
+          <div className="slideshow-box">
+            <button className="arrow left" onClick={() => goToStencil(currentStencilIndex - 1)}>
+              &#10094;
+            </button>
+            <div className="slideshow">
+              <div className="announcement">
+                <p>{stencils[currentStencilIndex].text}</p>
+                <img
+                  src={stencils[currentStencilIndex].image}
+                  alt="stencil_image"
+                  className="main-image"
+                />
+              </div>
             </div>
+            <button className="arrow right" onClick={() => goToStencil(currentStencilIndex + 1)}>
+              &#10095;
+            </button>
           </div>
-          <utton className="arrow left" onClick={goToPrevAnnouncement}>
-            &#10094;
-          </utton>
-          <utton className="arrow right" onClick={goToNextAnnouncement}>
-            &#10095;
-          </utton>
+          <div className="preview-container">
+            {generatePreviewImages()}
+          </div>
         </div>
- </div>
- </div></div>
-  );
-};
-
-export default Gallery;
-
+      </div>
+    );
+  }
+  
+  export default Gallery;

@@ -72,74 +72,14 @@ code {
   width: 100%;
 }
 
-/* CONTACT FORM */
-
-.contact {
-  color: var(--g1);
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-family: Segoe Script;
-
-}
-
-form {
-  width: 100%;
-  text-align: center;
-}
-
-form .form-group {
-  display: block;
-  width: 100%;
-  margin: 0.625rem 0;
-}
-
-form .form-input,
-form .form-textarea {
-  display: inline-block;
-  margin-left: 0;
-}
-
-
-form .form-input {
-  width: 40%;
-  padding: 0.75rem;
-  color: var(--g5);
-  background-color: var(--g1);
-  font-size: 1.2rem;
-  border: 1px solid var(--g4);
-  border-radius: 0.3rem;
-}
-
-.error{
-  color: red;
-}
-
-.btn {
-  text-align: center;
-  width: 10%;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  background-color: var(--g2);
-  color: var(--g5);
-  text-decoration: none;
-  margin: 0.5rem 0.5rem;
-
- display:inline-block;
-}
 
 
 /* SLIDESHOW */
 
 
-.Announce {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .slideshow-container {
-  max-width: 500px; /* Adjust width as needed */
+  max-width: 500px;
   margin: 0 auto;
-  border: 1px solid #ccc; /* Border style */
   position: relative;
   overflow: hidden;
 }
@@ -152,10 +92,11 @@ form .form-input {
 
 .slideshow {
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   position: relative;
+  width: 100%; /* Add this line */
 }
 
 .announcement {
@@ -172,9 +113,6 @@ form .form-input {
   max-width: 100%;
   height: auto;
   margin-top: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .arrow {
@@ -189,6 +127,19 @@ form .form-input {
   transition: background-color 0.3s ease;
 }
 
+/* .arrow.left,
+.arrow.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+} */
+
 .arrow.left {
   left: 5px;
 }
@@ -199,4 +150,36 @@ form .form-input {
 
 .arrow:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.preview-image {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.preview-image.active {
+  border: 2px solid #555;
+}
+
+.main-image {
+  width: 100%; /* Ensure the blown-up image spans the width */
+  max-height: 400px; /* Adjust the max height as needed */
+  object-fit: cover;
+}
+
+/* Add this to ensure arrows are visible */
+.arrow.left,
+.arrow.right {
+  display: block;
 }
