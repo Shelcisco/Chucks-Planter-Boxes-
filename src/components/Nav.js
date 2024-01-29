@@ -7,8 +7,8 @@ function Navbar() {
       <ScrollLink to="home" smooth={true} duration={500}>
         Home
       </ScrollLink>
-      <ScrollLink to="wwa" smooth={true} duration={500}>
-        Who We Are
+      <ScrollLink to="gallery" smooth={true} duration={500}>
+        Stencils
       </ScrollLink>
       <ScrollLink to="mtf" smooth={true} duration={500}>
         Meet the Founder
