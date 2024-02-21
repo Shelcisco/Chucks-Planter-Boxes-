@@ -3,6 +3,7 @@ import Navbar from "./Nav";
 import Logo from "../assets/Logo.png";
 import Footer from "./Footer";
 import Gallery from './Gallery';
+import Contact from "./Contact";
 
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
 <Navbar></Navbar>
 <div id="home" className="home">
 <img src={Logo} width={500} height={500} alt="Logo"></img>
-<Footer></Footer>
+{/* <Footer></Footer> */}
 </div>
 
 <div id="gallery" className="gallery">
@@ -23,22 +24,10 @@ function Home() {
 
 
 <div id="contact" className="Contact">
-
+<Contact></Contact>
 </div>
 
-<div className="one">
-<h1>Place Holder</h1>
-</div>
 
-<div className="two">
-<h1>Place Holder</h1>
-
-</div>
-
-<div className="three">
-<h1>Place Holder</h1>
-
-</div>
 
     </div>
  

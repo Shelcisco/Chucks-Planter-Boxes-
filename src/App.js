@@ -4,6 +4,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
 import Gallery from './components/Gallery'; // Import the new Gallery component
+import Contact from './components/Contact';
 import "./index.css";
 import "./App.css";
 
@@ -14,7 +15,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/gallery" element={<Gallery />} /> {/* Add this line for the gallery */}
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} /> {/* Add this line for the gallery */}
         </Routes>
       </BrowserRouter>
     </div>

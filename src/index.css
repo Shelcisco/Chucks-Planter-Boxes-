@@ -183,3 +183,207 @@ code {
 .arrow.right {
   display: block;
 }
+
+/*CONTACT FORM */ 
+
+ .contact {
+      color: white;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-family: Segoe Script;
+
+  }
+
+
+
+ 
+
+  .card-container {
+  height: 50px; 
+  width: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 8px #999;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  background-color: white;
+  height: fit-content;
+}
+
+#cardImage {
+ border-radius: 15px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-title {
+  margin: 0.5rem 5%;
+}
+
+.card-description {
+  margin: 0.5rem 5%;
+}
+
+#text {
+  text-align: center;
+}
+
+.card-btn {
+  text-align: center;
+  width: 42%;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: var(--g2);
+  color: var(--g5);
+  text-decoration: none;
+  margin: 0.5rem 0.5rem;
+
+ display:inline-block;
+}
+
+.res-container{
+  justify-content: center;
+  /* display: flex; */
+  flex-direction: column
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.content-wrapper {
+  position: relative;
+  padding-bottom: 2rem;
+  min-height: 80vh;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+form .form-group {
+  display: block;
+  width: 100%;
+  margin: 0.625rem 0;
+}
+
+form .form-input,
+form .form-textarea {
+  display: inline-block;
+  margin-left: 0;
+  /* margin-left:auto;
+  margin-right: auto; */
+}
+
+
+form .form-input {
+  width: 40%;
+  padding: 0.75rem;
+  color: var(--g5);
+  background-color: white;
+  /* margin: 0.625rem 0; */
+  font-size: 1.2rem;
+  border: 1px solid var(--g4);
+  border-radius: 0.3rem;
+}
+
+.error{
+  color: red;
+}
+
+.btn {
+  text-align: center;
+  width: 10%;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: var(--g2);
+  color: var(--g5);
+  text-decoration: none;
+  margin: 0.5rem 0.5rem;
+
+ display:inline-block;
+}
+
+.col-auto {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+
+

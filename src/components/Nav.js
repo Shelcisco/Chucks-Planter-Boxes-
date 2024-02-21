@@ -10,8 +10,8 @@ function Navbar() {
       <ScrollLink to="gallery" smooth={true} duration={500}>
         Stencils
       </ScrollLink>
-      <ScrollLink to="mtf" smooth={true} duration={500}>
-        Meet the Founder
+      <ScrollLink to="contact" smooth={true} duration={500}>
+        Contact
       </ScrollLink>
     </div>
   );
