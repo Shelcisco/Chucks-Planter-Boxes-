@@ -81,6 +81,7 @@
          </input>
          {emailError && <h5 className="error">Please enter a valid email</h5>}
          <br></br>
+         <br></br>
          <input className="form-input"
                 type="text"
                 placeholder="Name"
@@ -90,6 +91,7 @@
          </input>
          {nameError && <h5 className="error">Please enter name</h5>}
          <br></br>
+         <br></br>
          <input className="form-input"
                 type="text"
                 placeholder="Message"
@@ -98,6 +100,7 @@
                 onBlur={validateMessage}>
          </input>
          {messageError && <h5 className="error">Please enter a message</h5>}
+         <br></br>
          <br></br>
          <button type="submit" className="btn">Submit</button>
          <br></br>
