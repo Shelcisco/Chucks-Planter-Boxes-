@@ -19,6 +19,13 @@
 
      }
 
+     var [stencil,setStencil] = useState ("");
+     var [stencilError,setStencilError] = useState (false);
+     function validateStencil () {
+         setStencilError (stencil.trim()=="")
+
+     }
+
      var [message,setMessage] = useState ("");
      var [messageError,setMessageError] = useState (false);
      function validateMessage () {
@@ -27,33 +34,23 @@
      }
 
 
-   //Validation functions and submit handler
-//   const validateEmail = () => {
-//      setEmailError(!validEmail.test(email));
-//  };
-
-//  const validateName = () => {
-//      setNameError(name.trim() === "");
-//  };
-
-//  const validateMessage = () => {
-//      setMessageError(message.trim() === "");
-//  };
 
  const handleSubmit = (event) => {
      event.preventDefault();
 
      validateEmail();
      validateName();
+     validateStencil();
      validateMessage();
 
-     if (emailError || nameError || messageError) {
+     if (emailError || nameError || stencilError || messageError) {
          return;
      }
 
      const templateParams = {
          email: email,
          name: name,
+         stencil: stencil,
          message: message,
      };
 
@@ -90,6 +87,16 @@
                 onBlur={validateName}>
          </input>
          {nameError && <h5 className="error">Please enter name</h5>}
+         <br></br>
+         <br></br>
+         <input className="form-input"
+                type="text"
+                placeholder="Stencil"
+                value={stencil}
+                onChange={(event) => setStencil(event.target.value)}
+                onBlur={validateStencil}>
+         </input>
+         {stencilError && <h5 className="error">Please enter number</h5>}
          <br></br>
          <br></br>
          <input className="form-input"

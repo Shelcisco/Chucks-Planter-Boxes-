@@ -7,6 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+ .justify-center {
+  
+    padding-top: 100px; /* Adjust this value as needed */
+  padding-bottom: 200px;
+  
+}
+
+.Announce {
+  padding-top: 100px; /* Adjust this value as needed */
+  padding-bottom: 100px;
+}
+
+.home{
+padding-bottom: 100px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

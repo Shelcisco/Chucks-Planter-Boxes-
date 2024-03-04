@@ -17,16 +17,18 @@ function Home() {
 {/* <Footer></Footer> */}
 </div>
 
+
+
 <div id="gallery" className="gallery">
-<h1>Choose your Stencil</h1>
+
 <Gallery></Gallery>
 </div>
+
 
 
 <div id="contact" className="Contact">
 <Contact></Contact>
 </div>
-
 
 
     </div>

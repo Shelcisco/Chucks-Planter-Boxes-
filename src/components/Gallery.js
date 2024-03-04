@@ -275,7 +275,7 @@ function Gallery() {
   
     return (
       <div className="Announce">
-        <p>Stencils</p>
+        <h1>Choose your Stencil</h1>
         <div className="slideshow-container">
           <div className="slideshow-box">
           
