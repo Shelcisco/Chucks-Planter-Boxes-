@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Gallery from './Gallery';
 import Contact from "./Contact";
 import Social from "./Social";
+import Place from "./Place";
 
 
 function Home() {
@@ -19,7 +20,9 @@ function Home() {
 {/* <Footer></Footer> */}
 </div>
 
-
+<div id="place" className="place">
+  <Place></Place>
+</div>
 
 <div id="gallery" className="gallery">
 

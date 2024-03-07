@@ -7,8 +7,8 @@ function Navbar() {
       <ScrollLink to="home" smooth={true} duration={500}>
         Home
       </ScrollLink>
-      <ScrollLink to="gallery" smooth={true} duration={500}>
-        Stencils
+      <ScrollLink to="place" smooth={true} duration={500}>
+        Place Your Order
       </ScrollLink>
       <ScrollLink to="contact" smooth={true} duration={500}>
         Contact

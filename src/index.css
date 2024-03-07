@@ -16,7 +16,13 @@ body {
 }
 
 .Announce {
-  padding-top: 100px; /* Adjust this value as needed */
+  padding-top: 50px; /* Adjust this value as needed */
+  padding-bottom: 100px;
+}
+
+
+.place {
+  padding-top: 75px; /* Adjust this value as needed */
   padding-bottom: 100px;
 }
 
@@ -106,16 +112,12 @@ code {
   padding-top: 5%;
 }
 
-/* FOOTER */
+/*PLACE YOUR ORDER SECTION*/
 
-.footer {
+.PO2 {
+  justify-content: center;
   text-align: center;
-  position:fixed;
-  left:0;
-  bottom:0;
-  width: 100%;
 }
-
 
 
 /* SLIDESHOW */
@@ -227,6 +229,9 @@ code {
 .arrow.right {
   display: block;
 }
+
+
+
 
 /*CONTACT FORM */ 
 
