@@ -7,6 +7,8 @@ import Gallery from './components/Gallery'; // Import the new Gallery component
 import Contact from './components/Contact';
 import "./index.css";
 import "./App.css";
+import Social from './components/Social';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/social" element={<Social />} />
           <Route path="/contact" element={<Contact />} /> {/* Add this line for the gallery */}
         </Routes>
       </BrowserRouter>

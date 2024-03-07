@@ -34,6 +34,33 @@ code {
   background-color: #ecf0ef;
 }
 
+/*SOCIAL ICONS*/
+
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.social-icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 
 /* NAVBAR  */
 
