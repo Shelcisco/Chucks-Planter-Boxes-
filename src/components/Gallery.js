@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 
 
@@ -300,6 +301,10 @@ function Gallery() {
             {generatePreviewImages()}
           </div>
         </div>
+        <br></br>
+        <div className="sp">Picked your stencil? <ScrollLink to="contact" smooth={true} duration={500} style={{ color: 'blue' }}>
+   Click here to contact us!
+</ScrollLink> </div>
       </div>
     );
   }
