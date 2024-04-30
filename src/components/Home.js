@@ -2,13 +2,15 @@ import React from "react";
 import Navbar from "./Nav";
 import Logo from "../assets/Logo.png";
 import Footer from "./Footer";
-import Gallery from './Gallery';
+import Stencil from './Stencil';
 import Contact from "./Contact";
 import Social from "./Social";
 import Place from "./Place";
+import Gallery from './Gallery';
 
 
 function Home() {
+  
   return (
   
     <div className="hp">
@@ -20,13 +22,17 @@ function Home() {
 {/* <Footer></Footer> */}
 </div>
 
+<div id="gallery" className="gallery">
+<Gallery></Gallery>
+</div>
+
 <div id="place" className="place">
   <Place></Place>
 </div>
 
-<div id="gallery" className="gallery">
+<div id="stencil" className="stencil">
 
-<Gallery></Gallery>
+<Stencil></Stencil>
 </div>
 
 
