@@ -3,7 +3,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home';
-import Stencil from './components/Social'; // Import the new Gallery component
+import Stencil from './components/Stencil'; // Import the new Gallery component
 import Contact from './components/Contact';
 import "./index.css";
 import "./App.css";
