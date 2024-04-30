@@ -20,25 +20,37 @@ body {
   padding-bottom: 100px;
 }
 
+.gallery {
+  padding-top: 75px; /* Adjust this value as needed */
+  padding-bottom: 100px;
+}
 
 .place {
   padding-top: 75px; /* Adjust this value as needed */
   padding-bottom: 100px;
 }
 
-.home{
-padding-bottom: 100px;
-}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+/* HOMEPAGE */
+
 .hp{
   
   background-color: #ecf0ef;
 }
+
+.home {
+  padding-top: 5%;
+}
+
+.home{
+  padding-bottom: 100px;
+  }
 
 /*SOCIAL ICONS*/
 
@@ -106,10 +118,76 @@ code {
   color: rgb(18, 17, 17);
 }
 
-/* HOMEPAGE */
 
-.home {
+/* FULL GALLERY */
+
+/* Updated CSS */
+.gallery.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+
+
+.gallery-item video {
+  display: block;
+  max-width: 50%; /* Maximum width of 100% for videos */
+  max-height: 75%;
+  height: auto; /* Allow height to adjust automatically */
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+  border: 2vw solid white; /* White border with a relative unit (4vw) */
+  border-radius: 8px; /* Border radius */
+  overflow: hidden;
+  box-shadow: 0px 2vw 2vw rgba(0, 0, 0, 0.1); /* Box shadow with relative units */
+}
+
+.gallery-item img {
+  display: block;
+  max-width: 50%; /* Maximum width of 50% for images */
+  max-height: auto; /* Maximum height of 75% of the viewport height */
+  width: auto; /* Allow width to adjust automatically */
+  height: auto; /* Allow height to adjust automatically */
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+  border: 2vw solid white; /* White border with a relative unit (4vw) */
+  border-radius: 8px; /* Border radius */
+  overflow: hidden;
+  box-shadow: 0px 2vw 2vw rgba(0, 0, 0, 0.1); /* Box shadow with relative units */
+}
+
+@media (max-width: 768px) {
+  .gallery.grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .gallery-item {
+    border-width: 3vw; /* Adjust border width for smaller screens */
+    box-shadow: 0px 1.5vw 3vw rgba(0, 0, 0, 0.1); /* Adjust box shadow for smaller screens */
+  }
+}
+
+
+
+
+/* .gallery-item video {
+  max-width: 50%;
+  height: 75%;
+}
+
+.gallery-item img {
+  max-width: 50%;
+  height: auto;
+} */
+
+
+.fg {
+  background-color: #ecf0ef;
   padding-top: 5%;
+  padding-bottom: 100%;
 }
 
 /*PLACE YOUR ORDER SECTION*/
