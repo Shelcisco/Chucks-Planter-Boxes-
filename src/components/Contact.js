@@ -91,7 +91,7 @@
          <br></br>
          <input className="form-input"
                 type="text"
-                placeholder="Stencil"
+                placeholder="Stencil #"
                 value={stencil}
                 onChange={(event) => setStencil(event.target.value)}
                 onBlur={validateStencil}>
