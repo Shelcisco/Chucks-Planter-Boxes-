@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Chucks-Planter-Boxes-/static/css/main.0f84a0b5.css",
+    "main.css": "/Chucks-Planter-Boxes-/static/css/main.21feb136.css",
     "main.js": "/Chucks-Planter-Boxes-/static/js/main.c8050623.js",
     "static/js/787.e08f4277.chunk.js": "/Chucks-Planter-Boxes-/static/js/787.e08f4277.chunk.js",
     "static/media/P2.png": "/Chucks-Planter-Boxes-/static/media/P2.08ca80bb4b5b94943291.png",
@@ -90,12 +90,12 @@
     "static/media/fa-v4compatibility.ttf": "/Chucks-Planter-Boxes-/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/Chucks-Planter-Boxes-/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/Chucks-Planter-Boxes-/index.html",
-    "main.0f84a0b5.css.map": "/Chucks-Planter-Boxes-/static/css/main.0f84a0b5.css.map",
+    "main.21feb136.css.map": "/Chucks-Planter-Boxes-/static/css/main.21feb136.css.map",
     "main.c8050623.js.map": "/Chucks-Planter-Boxes-/static/js/main.c8050623.js.map",
     "787.e08f4277.chunk.js.map": "/Chucks-Planter-Boxes-/static/js/787.e08f4277.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f84a0b5.css",
+    "static/css/main.21feb136.css",
     "static/js/main.c8050623.js"
   ]
 }
