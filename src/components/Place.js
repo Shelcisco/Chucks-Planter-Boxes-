@@ -37,7 +37,7 @@ export default function Place(){
             <br></br>
             <br></br>
             <br></br>
-            <div className="ready">Ready to get started? <ScrollLink to="gallery" smooth={true} duration={500} style={{ color: 'blue' }}>
+            <div className="ready">Ready to get started? <ScrollLink to="stencil" smooth={true} duration={500} style={{ color: 'blue' }}>
                 Click here to pick your Stencil!
             </ScrollLink> </div>
         </div>
