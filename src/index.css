@@ -219,39 +219,38 @@ code {
 }
 
 
-
-/* Additional styles can be added as needed for modal controls, such as close button */
-
-
-
-
-
-
-/* .gallery-item video {
-  max-width: 50%;
-  height: 75%;
-}
-
-.gallery-item img {
-  max-width: 50%;
-  height: auto;
-} */
-
-
 .fg {
   background-color: #ecf0ef; 
   padding-top: 5%;
   padding-bottom: 100%;
 }
 
+.modal-content {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.arrow.left {
+  left: 10px; /* Adjust this value to move the left arrow more left */
+}
+
+.arrow.right {
+  right: 10px; /* Adjust this value to move the right arrow more right */
+}
+
+
 /*PLACE YOUR ORDER SECTION*/
-
-/* .PO2 {
-  justify-content: center;
-  text-align: center;
-} */
-
-/* index.css */
 
 .content-container {
   display: flex;

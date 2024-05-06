@@ -42,6 +42,8 @@ const Fullgall = () => {
   const [galleryItems, setGalleryItems] = useState([]);
   const [sortedItems, setSortedItems] = useState([]);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const maxIndex = sortedItems.length - 1;
 
   // Sample gallery data
   const sampleGallery = [
@@ -91,23 +93,41 @@ const Fullgall = () => {
     setSortedItems(sampleGallery); // Initial sorting
   }, []);
 
-  // Function to handle item click and enlargement
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
-    // Logic to enlarge item
-  };
+ // Function to handle item click and enlargement
+const handleItemClick = (item, index) => {
+  setSelectedItem(sortedItems[index]); // Update selectedItem based on sortedItems and index
+  setSelectedIndex(index);
+};
 
-   // Function to sort items by type (photo or video)
-   const handleSort = (type) => {
-    const sorted = galleryItems.filter((item) => item.type === type);
-    setSortedItems(sorted);
-  };
+// Function to handle clicking on the left arrow
+const handleLeftArrowClick = () => {
+  const currentIndex = sortedItems.findIndex((item) => item.id === selectedItem.id);
+  const newIndex = currentIndex === 0 ? sortedItems.length - 1 : currentIndex - 1;
+  setSelectedItem(sortedItems[newIndex]);
+};
+
+// Function to handle clicking on the right arrow
+const handleRightArrowClick = () => {
+  const currentIndex = sortedItems.findIndex((item) => item.id === selectedItem.id);
+  const newIndex = currentIndex === sortedItems.length - 1 ? 0 : currentIndex + 1;
+  setSelectedItem(sortedItems[newIndex]);
+};
+
+
+
+  
+ // Function to sort items by type (photo or video)
+ const handleSort = (type) => {
+  const sorted = galleryItems.filter((item) => item.type === type);
+  setSortedItems(sorted);
+  setSelectedItem(null); // Close modal when sorting
+};
 
   // Function to return to original view
   const handleReturn = () => {
     setSortedItems(galleryItems);
+    setSelectedItem(null); // Close modal when returning
   };
-
    // Function to close the modal
    const handleCloseModal = () => {
     setSelectedItem(null);
@@ -115,7 +135,7 @@ const Fullgall = () => {
 
   return (
     <div className="fg">
-      <Social></Social>
+      <Social />
       <div className="topnav">
         <Link to="/home">Home</Link>
       </div>
@@ -128,31 +148,38 @@ const Fullgall = () => {
       </div>
       <div className="gallery grid">
         {/* Render gallery items */}
-        {sortedItems.map((item) => (
-          <div key={item.id} className="gallery-item" onClick={() => handleItemClick(item)}>
+        {sortedItems.map((item, index) => (
+          <div key={item.id} className="gallery-item" onClick={() => handleItemClick(item, index)}>
             {/* Render each item */}
-            {item.type === "photo" ? (
-              <img src={item.url} alt={item.id} />
-            ) : (
-              <video src={item.url} controls />
-            )}
+            {item.type === "photo" ? <img src={item.url} alt={item.id} /> : <video src={item.url} controls />}
           </div>
         ))}
       </div>
-{/* Modal */}
-{selectedItem && (
-  <div className="modal">
-    <div className="modal-content">
-      {selectedItem.type === "photo" ? (
-        <img src={selectedItem.url} alt={selectedItem.id} />
-      ) : (
-        <video src={selectedItem.url} controls />
+      {/* Modal */}
+      {selectedItem && (
+        <div className="modal">
+          <div className="modal-content">
+            {/* Left arrow */}
+            <button className="arrow left" onClick={handleLeftArrowClick}>
+              &lt;
+            </button>
+            {/* Selected item */}
+            {selectedItem.type === "photo" ? (
+              <img src={selectedItem.url} alt={selectedItem.id} />
+            ) : (
+              <video src={selectedItem.url} controls />
+            )}
+            {/* Right arrow */}
+            <button className="arrow right" onClick={handleRightArrowClick}>
+              &gt;
+            </button>
+            {/* Close button */}
+            <button className="close-button" onClick={handleCloseModal}>
+              X
+            </button>
+          </div>
+        </div>
       )}
-      {/* Place "X" icon in the top-right corner of the white border */}
-      <button className="close-button" onClick={handleCloseModal}>X</button>
-    </div>
-  </div>
-)}
     </div>
   );
 };
