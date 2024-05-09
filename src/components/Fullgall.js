@@ -139,11 +139,13 @@ const handleRightArrowClick = () => {
       <div className="topnav">
         <Link to="/home">Home</Link>
       </div>
+      <div className="fgtitle">
       <h1>Photo and Video Gallery</h1>
+      </div>
       <div>
         {/* Sorting buttons */}
         <button onClick={() => handleSort("photo")}>Photos</button>
-        <button onClick={() => handleSort("video")}>Video</button>
+        <button onClick={() => handleSort("video")}>Videos</button>
         <button onClick={handleReturn}>See All</button>
       </div>
       <div className="gallery grid">
