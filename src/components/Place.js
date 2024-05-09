@@ -14,7 +14,7 @@ export default function Place(){
                     <img src={Hum} alt="Bird" />
                 </div>
                 <div className="text-box">
-                <h1>Place Your Order</h1>
+                <h1 id='pt'>Place Your Order</h1>
                     <p>We're currently offering our standard boxes, like our Frog box here, that measure approximately 12”x12”x12” deep</p>
                     <p>Our standard box is one for $30.00 or two for $25.00 each</p>
                     <p>To place your order please pick your preferred stencil and fill out our contact form. In your message please include:</p>
@@ -31,7 +31,6 @@ export default function Place(){
                 </div>
                
             </div>
-            <br></br>
             <br></br>
             <br></br>
             <br></br>
