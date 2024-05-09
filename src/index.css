@@ -557,10 +557,17 @@ form .form-input {
 @media (max-width: 768px) {
   /* Adjust padding for various sections */
   .justify-center {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
   
+  .sgvid-grid img {
+    width: auto; /* Set fixed width */
+    height: auto; /* Set fixed height */
+    border-radius: 8px; /* Add border radius */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+  }
   .Announce {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -582,8 +589,8 @@ form .form-input {
 }
 
 #Logo{
-  width: 250px;
-  height: 250px;
+  width: auto;
+  height: auto;
 }
   /* Adjust font size for form inputs */
   form .form-input {
