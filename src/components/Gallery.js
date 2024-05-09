@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation } from "react-router-dom";
-import Parade from "../assets/Parade.mp4";
-import Flamingo from "../assets/Flamingo.mp4";
-import Crown from "../assets/Crown.mp4";
+import G1 from "../assets/P22.png";
+import G2 from "../assets/44.png";
+import G3 from "../assets/P28.png";
 
 export default function Gallery(){
 
@@ -13,28 +13,21 @@ export default function Gallery(){
     return(
       <div className="shortgal">
          <div className= "gtitle">
-         <h1>Gallery</h1>
-         <Link to="/fullgall" className={pathname === "/fullgall" ? "active" : ""}>
+            <h1>Gallery</h1>
+            <Link to="/fullgall" className={pathname === "/fullgall" ? "active" : ""}>
                Click here to see the full Gallery
             </Link>
-            </div>
-         <div className="sgvid">
-         <video className="video-item" controls>
-               <source src={Flamingo} type="video/mp4" />
-               Your browser does not support the video tag.
-            </video>
-            <video className="video-item" controls>
-               <source src={Parade} type="video/mp4" />
-               Your browser does not support the video tag.
-            </video>
-            <video className="video-item" controls>
-               <source src={Crown} type="video/mp4" />
-               Your browser does not support the video tag.
-            </video>
+          </div>
+          <br></br>
+          <br></br>
+         <div className="sgvid-grid">
+            <img src={G1} alt="GP" />
+            <img src={G2} alt="GP" className="center-image" />
+            <img src={G3} alt="GP" />
          </div>
-         <div className="fgl">
-           </div>
-         <div className="po">
+         <br></br>
+          <br></br>
+ <div className="po">
             Ready to get started? <ScrollLink to="place" smooth={true} duration={500} style={{ color: 'blue' }}>
                Click here to place your order!
             </ScrollLink>
@@ -42,3 +35,4 @@ export default function Gallery(){
       </div>
     )
 }
+
