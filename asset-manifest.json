@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Chucks-Planter-Boxes-/static/css/main.21feb136.css",
-    "main.js": "/Chucks-Planter-Boxes-/static/js/main.c8050623.js",
+    "main.css": "/Chucks-Planter-Boxes-/static/css/main.2ca9f9a5.css",
+    "main.js": "/Chucks-Planter-Boxes-/static/js/main.f1145640.js",
     "static/js/787.e08f4277.chunk.js": "/Chucks-Planter-Boxes-/static/js/787.e08f4277.chunk.js",
     "static/media/P2.png": "/Chucks-Planter-Boxes-/static/media/P2.08ca80bb4b5b94943291.png",
     "static/media/P8.png": "/Chucks-Planter-Boxes-/static/media/P8.3a92973a963f6263876b.png",
@@ -19,6 +19,7 @@
     "static/media/12Deep.mp4": "/Chucks-Planter-Boxes-/static/media/12Deep.0afe9b50d2c6e6437017.mp4",
     "static/media/Flamingo.mp4": "/Chucks-Planter-Boxes-/static/media/Flamingo.0f7c74f66e65e2f9b043.mp4",
     "static/media/P22.png": "/Chucks-Planter-Boxes-/static/media/P22.bbd0eda65635edad70d3.png",
+    "static/media/P28.png": "/Chucks-Planter-Boxes-/static/media/P28.1e0f2c870c521a9f333a.png",
     "static/media/P15.png": "/Chucks-Planter-Boxes-/static/media/P15.a35a8827ce8200d829f5.png",
     "static/media/P20.png": "/Chucks-Planter-Boxes-/static/media/P20.fbc08882399a43ab6fa0.png",
     "static/media/Parade.mp4": "/Chucks-Planter-Boxes-/static/media/Parade.b2fb417fc8a5300b2540.mp4",
@@ -90,12 +91,12 @@
     "static/media/fa-v4compatibility.ttf": "/Chucks-Planter-Boxes-/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/Chucks-Planter-Boxes-/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/Chucks-Planter-Boxes-/index.html",
-    "main.21feb136.css.map": "/Chucks-Planter-Boxes-/static/css/main.21feb136.css.map",
-    "main.c8050623.js.map": "/Chucks-Planter-Boxes-/static/js/main.c8050623.js.map",
+    "main.2ca9f9a5.css.map": "/Chucks-Planter-Boxes-/static/css/main.2ca9f9a5.css.map",
+    "main.f1145640.js.map": "/Chucks-Planter-Boxes-/static/js/main.f1145640.js.map",
     "787.e08f4277.chunk.js.map": "/Chucks-Planter-Boxes-/static/js/787.e08f4277.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21feb136.css",
-    "static/js/main.c8050623.js"
+    "static/css/main.2ca9f9a5.css",
+    "static/js/main.f1145640.js"
   ]
 }
