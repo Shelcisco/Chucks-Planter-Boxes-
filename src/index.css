@@ -557,17 +557,30 @@ form .form-input {
 @media (max-width: 768px) {
   /* Adjust padding for various sections */
   .justify-center {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   
-  .sgvid-grid img {
-    width: auto; /* Set fixed width */
-    height: auto; /* Set fixed height */
-    border-radius: 8px; /* Add border radius */
-    overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
-  }
+ 
+.sgvid-grid {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: auto; /* Adjust gap between images */
+}
+
+.sgvid-grid img {
+  width: auto; /* Set fixed width */
+  height: auto; /* Set fixed height */
+  border-radius: 8px; /* Add border radius */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+}
+
+.center-image {
+  width: auto; /* Auto width for the center image */
+  height: auto; /* Auto height for the center image */
+}
   .Announce {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -578,6 +591,10 @@ form .form-input {
     padding-bottom: 50px;
   }
   
+  .shortgal {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
   .place {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -601,6 +618,30 @@ form .form-input {
   /* Adjust width of buttons */
   .btn {
     width: 30%; /* Adjust width of buttons */
+  }
+
+  .topnav {
+  
+    background-color:rgb(214, 229, 214);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: auto;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #090909;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: auto;
+    font-family: 'Courier New', monospace;
+    font-weight: lighter;
+    margin-top: auto; /* Adjust this value as needed */
+   
   }
 }
 
