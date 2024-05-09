@@ -576,6 +576,15 @@ form .form-input {
     padding-bottom: 50px;
   }
 
+  
+.fgtitle{
+  padding-top: 20px;
+}
+
+#Logo{
+  width: 250px;
+  height: 250px;
+}
   /* Adjust font size for form inputs */
   form .form-input {
     width: 80%; /* Adjust width of form inputs */
