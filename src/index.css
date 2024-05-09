@@ -28,10 +28,13 @@ body {
 .place {
   padding-top: 75px; /* Adjust this value as needed */
   padding-bottom: 100px;
-  font-family: Andale Mono, monospace;
+  /* font-family: Andale Mono, monospace; */
 }
 
-
+h1{
+  font-family: 'Courier New', monospace;
+  font-weight: bolder;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -126,17 +129,28 @@ code {
 
 /*SMALL GALLERY */
 
-.sgvid {
+.sgvid-grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Adjust gap between images */
 }
 
-.video-item {
-  max-width: 15%;
-  margin: 0 10px;
-  padding: 10px;
+.sgvid-grid img {
+  width: 300px; /* Set fixed width */
+  height: 300px; /* Set fixed height */
+  border-radius: 8px; /* Add border radius */
+  overflow: hidden; /* Hide overflow content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
 }
+
+.center-image {
+  width: auto; /* Auto width for the center image */
+  height: auto; /* Auto height for the center image */
+}
+
+
+
 
 
 /* FULL GALLERY */
@@ -223,6 +237,7 @@ code {
   background-color: #ecf0ef; 
   padding-top: 5%;
   padding-bottom: 100%;
+
 }
 
 .modal-content {
@@ -262,7 +277,13 @@ code {
   width: 50%;
   padding: 0 20px; /* Adjust padding as needed */
   padding-top: 20px;
+  text-align: center; /* Center the text horizontally */
 }
+
+#pt {
+  margin-left: 40px; /* Add margin to the right side of the h1 */
+}
+
 
 .bird {
   width: 25%;
