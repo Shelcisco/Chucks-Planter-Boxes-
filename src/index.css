@@ -558,7 +558,7 @@ form .form-input {
   .Announce,
   .gallery,
   .shortgal,
-  .order { /* Adjusted .order here */
+  .place {
       padding-top: 30px;
       padding-bottom: 50px;
   }
@@ -585,8 +585,20 @@ form .form-input {
       padding: 10px; /* Adjust padding */
   }
 
-  /* Adjust spacing for the bird image */
+  /* Adjust layout for place order section */
+  .order {
+      display: flex; /* Ensure it's a flex container */
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .content-container {
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center items horizontally */
+  }
+
   .bird {
+      order: 2; /* Change the order of the image */
       padding-top: 20px; /* Add padding top */
       padding-right: 0; /* Remove right padding */
       text-align: center; /* Center the image */
@@ -599,10 +611,29 @@ form .form-input {
       border-radius: 15px; /* Add border radius */
   }
 
-  .order {
-      display: flex; /* Ensure it's a flex container */
-      flex-direction: column; /* Change to column layout */
-      align-items: center; /* Center items horizontally */
+   /* Adjust layout for gallery images */
+   .sgvid {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+  }
+
+  .sgvid img {
+    width: 80%; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add border radius */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    margin-bottom: 20px; /* Add margin between images */
+  }
+
+  .fgtitle{
+    padding-top: 30px;
+  }
+
+  #Logo{
+    width: 125px;
+    height: 125px;
   }
 }
 
