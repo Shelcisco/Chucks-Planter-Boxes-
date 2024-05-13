@@ -15,19 +15,19 @@ export default function Place(){
                 </div>
                 <div className="text-box">
                 <h1 id='pt'>Place Your Order</h1>
-                    <p>We're currently offering our standard boxes, like our Frog box here, that measure approximately 12”x12”x12” deep</p>
-                    <p>Our standard box is one for $30.00 or two for $25.00 each</p>
-                    <p>To place your order please pick your preferred stencil and fill out our contact form. In your message please include:</p>
+                    <p>We're currently offering our standard boxes, like our Frog box here, that measure approximately 12”x12”x12” deep.</p>
+                    <p>Our standard box is one for $30.00, or two for $25.00 each.</p>
+                    <p>To place an order please pick your preferred stencil and fill out our contact form below. In your message please include:</p>
                     <div className="PO2">
                         <ul style={{ textAlign: "center", listStylePosition: "inside" }}>
-                            <li>Your Email</li>
                             <li>Your Name</li>
+                            <li>Your Email</li>
                             <li>The number of the Stencil you would like</li>
                             <li>The number of boxes you would like</li>
-                            <li>Any questions or anything special we should know!</li>
+                            <li>Questions or anything special we should know!</li>
                         </ul>
                     </div>
-                    <p>If you're interested in any of our other planter box styles please include that in your message and we can discuss availability for special orders!</p>
+                    <p>If you're interested in any of our other planter box styles please include that in your message, and we can discuss availability for special orders.</p>
                 </div>
                
             </div>
