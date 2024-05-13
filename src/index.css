@@ -628,19 +628,20 @@ form .form-input {
    /* Adjust layout for gallery images */
    .sgvid {
     display: flex;
-    flex-direction: center;
+    justify-content: center; /* Center the images horizontally */
     align-items: center;
   }
-
-
+  
   #GP {
-    width: 20%; /* Ensure images and videos fill their container */
-    height: 20%; /* Ensure images and videos fill their container */
-    object-fit: cover; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add border radius */
-    overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    max-width: 50%; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Add some margin between images */
   }
+  
+  
 
   .fgtitle{
     padding-top: 30px;

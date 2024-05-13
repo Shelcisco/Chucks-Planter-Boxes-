@@ -21,9 +21,9 @@ export default function Gallery(){
           <br></br>
           <br></br>
          <div className="sgvid-grid">
-            <img src={G1} alt="GP" />
-            <img src={G2} alt="GP" className="center-image" />
-            <img src={G3} alt="GP" />
+         <img src={G1} alt="GP" id="GP" />
+<img src={G2} alt="GP" id="GP" className="center-image" />
+<img src={G3} alt="GP" id="GP" />
          </div>
          <br></br>
           <br></br>
