@@ -558,77 +558,52 @@ form .form-input {
   .Announce,
   .gallery,
   .shortgal,
-  .place,
-  .order {
-    padding-top: 30px;
-    padding-bottom: 50px;
+  .order { /* Adjusted .order here */
+      padding-top: 30px;
+      padding-bottom: 50px;
   }
 
   /* Adjust font size for form inputs */
   form .form-input {
-    width: 80%; /* Adjust width of form inputs */
-    font-size: 1rem;
+      width: 80%; /* Adjust width of form inputs */
+      font-size: 1rem;
   }
 
   /* Adjust width of buttons */
   .btn {
-    width: 30%; /* Adjust width of buttons */
+      width: 30%; /* Adjust width of buttons */
   }
 
   /* Adjust navigation bar width */
   .topnav {
-    width: 100%; /* Set width to full */
+      width: 100%; /* Set width to full */
   }
 
   /* Style the links inside the navigation bar for smaller screens */
   .topnav a {
-    font-size: 14px; /* Adjust font size */
-    padding: 10px; /* Adjust padding */
+      font-size: 14px; /* Adjust font size */
+      padding: 10px; /* Adjust padding */
   }
 
   /* Adjust spacing for the bird image */
   .bird {
-    padding-top: 20px; /* Add padding top */
-    padding-right: 0; /* Remove right padding */
-    text-align: center; /* Center the image */
+      padding-top: 20px; /* Add padding top */
+      padding-right: 0; /* Remove right padding */
+      text-align: center; /* Center the image */
   }
 
   /* Make the bird image width responsive */
   .bird img {
-    width: 70%; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 15px; /* Add border radius */
+      width: 70%; /* Adjust width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 15px; /* Add border radius */
   }
 
   .order {
-    flex-direction: column;
+      display: flex; /* Ensure it's a flex container */
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center items horizontally */
   }
-
-  /* Adjust layout for gallery images */
-  .sgvid {
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-  }
-
-  .sgvid img {
-    width: 80%; /* Adjust image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Add border radius */
-    overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
-    margin-bottom: 20px; /* Add margin between images */
-  }
-
-  .fgtitle{
-    padding-top: 30px;
-  }
-
-  #Logo{
-    width: 125px;
-    height: 125px;
-  }
-  
 }
 
 
