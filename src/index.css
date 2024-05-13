@@ -618,7 +618,7 @@ form .form-input {
   }
 
   /* Make the bird image width responsive */
-  .bird img {
+  #Bird {
     width: 80%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px; /* Add border radius */
@@ -635,13 +635,12 @@ form .form-input {
 
   
 
-  .sgvid img {
-    max-width: 100%; /* Adjust the maximum width as needed */
-    max-height: 200px;
+  #GP {
+    max-width: 50%; /* Adjust the maximum width as needed */
+    max-height: 50px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Add border radius */
     overflow: hidden; /* Hide overflow content */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
     margin-bottom: 20px; /* Add margin between images */
   }
 
