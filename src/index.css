@@ -633,15 +633,13 @@ form .form-input {
   }
 
 
-  
-
   #GP {
-    max-width: 50%; /* Adjust the maximum width as needed */
-    max-height: 50px;
-    height: auto; /* Maintain aspect ratio */
+    width: 20%; /* Ensure images and videos fill their container */
+    height: 20%; /* Ensure images and videos fill their container */
+    object-fit: cover; /* Maintain aspect ratio */
     border-radius: 8px; /* Add border radius */
     overflow: hidden; /* Hide overflow content */
-    margin-bottom: 20px; /* Add margin between images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
   }
 
   .fgtitle{
