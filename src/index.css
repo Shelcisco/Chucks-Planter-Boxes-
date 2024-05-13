@@ -599,6 +599,10 @@ form .form-input {
     border-radius: 15px; /* Add border radius */
   }
 
+  .order {
+    flex-direction: column;
+  }
+
   /* Adjust layout for gallery images */
   .sgvid {
     display: flex;
