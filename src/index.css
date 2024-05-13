@@ -563,6 +563,19 @@ form .form-input {
       padding-bottom: 50px;
   }
 
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .home img {
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+
   /* Adjust font size for form inputs */
   form .form-input {
       width: 80%; /* Adjust width of form inputs */
@@ -606,10 +619,11 @@ form .form-input {
 
   /* Make the bird image width responsive */
   .bird img {
-      width: 70%; /* Adjust width */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 15px; /* Add border radius */
+    width: 80%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Add border radius */
   }
+  
 
    /* Adjust layout for gallery images */
    .sgvid {
@@ -618,8 +632,12 @@ form .form-input {
     align-items: center;
   }
 
+
+  
+
   .sgvid img {
-    width: 80%; /* Adjust image width */
+    max-width: 100%; /* Adjust the maximum width as needed */
+    max-height: 200px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Add border radius */
     overflow: hidden; /* Hide overflow content */
@@ -631,9 +649,14 @@ form .form-input {
     padding-top: 30px;
   }
 
-  #Logo{
+  /* #Logo{
     width: 125px;
     height: 125px;
+  } */
+
+  .text-box {
+    width: 100%;
+    padding: 0 20px; /* Adjust padding as needed */
   }
 }
 
