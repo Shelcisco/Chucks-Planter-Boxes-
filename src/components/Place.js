@@ -11,7 +11,7 @@ export default function Place(){
             <br></br>
             <div className="content-container">
             <div className="bird">
-                    <img src={Hum} alt="Bird" />
+                    <img src={Hum} alt="Bird" id ="Bird" />
                 </div>
                 <div className="text-box">
                 <h1 id='pt'>Place Your Order</h1>
