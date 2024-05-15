@@ -564,13 +564,16 @@ form .form-input {
  
   .gallery,
   .place {
-      
+      padding-top: 30px;
+      padding-bottom: 50px;
   }
 
-  .shortgal{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+  
+    .shortgal{
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
   .Announce {
     padding-top: 40px;
     padding-bottom: 40px;
