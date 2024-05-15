@@ -555,7 +555,7 @@ form .form-input {
 @media (max-width: 768px) {
   /* Adjust padding for various sections */
   
-  .Announce,
+ 
   .gallery,
   .shortgal,
   .place {
@@ -563,12 +563,16 @@ form .form-input {
       padding-bottom: 50px;
   }
 
+  .Announce {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
 
   .C1 {
     padding-top: 50px;
       padding-bottom: 50px;
   }
-  
+
   .home {
     display: flex;
     justify-content: center;
@@ -579,6 +583,7 @@ form .form-input {
   .home img {
     width: 80%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+    padding-bottom: 50px;
   }
   
 
