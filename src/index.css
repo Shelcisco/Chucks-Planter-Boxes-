@@ -570,8 +570,9 @@ form .form-input {
 
   
     .shortgal{
-      padding-top: 400px;
-      padding-bottom: 300px;
+      padding-top: 300px;
+      padding-bottom: 200px;
+      min-height: 100vh;
     }
 
   .Announce {
