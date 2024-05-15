@@ -16,7 +16,7 @@ body {
 }
 
 .Announce {
-  padding-top: 50px; /* Adjust this value as needed */
+  padding-top: 60px; /* Adjust this value as needed */
   padding-bottom: 100px;
 }
 
@@ -35,6 +35,11 @@ h1{
   font-family: 'Courier New', monospace;
   font-weight: bolder;
 }
+
+/* p, ul {
+ font-weight: bold;
+ 
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -278,10 +283,11 @@ code {
   padding: 0 20px; /* Adjust padding as needed */
   padding-top: 20px;
   text-align: center; /* Center the text horizontally */
+  
 }
 
 #pt {
-  margin-left: 40px; /* Add margin to the right side of the h1 */
+  margin-left: 5px; /* Add margin to the right side of the h1 */
 }
 
 
@@ -615,6 +621,8 @@ form .form-input {
       flex-direction: column; /* Change to column layout */
       align-items: center; /* Center items horizontally */
   }
+
+
 
   .content-container {
       flex-direction: column; /* Change to column layout */
