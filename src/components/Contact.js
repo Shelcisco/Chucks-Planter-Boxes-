@@ -67,6 +67,7 @@
 
  // JSX for the contact form
  return (
+    <div className="C1">
      <form className="justify-center" onSubmit={handleSubmit}>
          <h1>Contact</h1>
          <input className="form-input"
@@ -112,6 +113,7 @@
          <button type="submit" className="btn">Submit</button>
          <br></br>
      </form>
+     </div>
    );
  };
 

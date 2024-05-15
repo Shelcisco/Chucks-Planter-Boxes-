@@ -564,10 +564,11 @@ form .form-input {
   }
 
 
-  .justify-center {
+  .C1 {
     padding-top: 50px;
       padding-bottom: 50px;
   }
+  
   .home {
     display: flex;
     justify-content: center;
