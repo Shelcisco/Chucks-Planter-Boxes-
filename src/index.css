@@ -554,7 +554,7 @@ form .form-input {
 /* For screens smaller than 768px (phones) */
 @media (max-width: 768px) {
   /* Adjust padding for various sections */
-  .justify-center,
+  
   .Announce,
   .gallery,
   .shortgal,
@@ -563,6 +563,11 @@ form .form-input {
       padding-bottom: 50px;
   }
 
+
+  .justify-center {
+    padding-top: 50px;
+      padding-bottom: 50px;
+  }
   .home {
     display: flex;
     justify-content: center;
@@ -619,7 +624,7 @@ form .form-input {
 
   /* Make the bird image width responsive */
   #Bird {
-    width: 80%; /* Adjust the width as needed */
+    max-width: 100%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     border-radius: 15px; /* Add border radius */
   }
