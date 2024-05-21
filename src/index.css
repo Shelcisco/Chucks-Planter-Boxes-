@@ -616,7 +616,7 @@ form .form-input {
 
 
   .order {
-    padding-top: 40px;
+    padding-top: 5px;
     padding-bottom: 600px;
 }
 
@@ -628,8 +628,8 @@ form .form-input {
     }
 
   .Announce {
-    padding-top: 10px;
-    padding-bottom: 150px;
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 
   .C1 {
@@ -641,7 +641,7 @@ form .form-input {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh; /* Adjust as needed */
+    height: 80vh; /* Adjust as needed */
   }
   
   .home img {
