@@ -14,9 +14,11 @@ export default function Gallery(){
       <div className="shortgal">
          <div className= "gtitle">
             <h1>Gallery</h1>
+            <div className= "fgtext">
             <Link to="/fullgall" className={pathname === "/fullgall" ? "active" : ""}>
                Click here to see the full Gallery
             </Link>
+            </div>
           </div>
           <br></br>
           <br></br>

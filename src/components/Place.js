@@ -15,6 +15,7 @@ export default function Place(){
                 </div>
                 <div className="text-box">
                 <h1 id='pt'>Place Your Order</h1>
+                <div className="inner-text-box">
                     <p>We're currently offering our standard boxes, like our Frog box here, that measures approximately 12”x12”x12” deep.</p>
                     <p>Our standard box is one for $30.00, or two for $25.00 each.</p>
                     <p>To place an order please pick your preferred stencil and fill out our contact form below. On the form please include:</p>
@@ -27,11 +28,12 @@ export default function Place(){
                         </ul>
                     </div>
                     <p>If you're interested in any of our other planter box styles please include that in your message, and we can discuss availability for special orders.</p>
+                    </div>
                 </div>
                
             </div>
-            <br></br>
-            <br></br>
+           
+           
             <br></br>
             <br></br>
             <br></br>
