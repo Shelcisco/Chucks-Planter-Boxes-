@@ -641,7 +641,7 @@ form .form-input {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed */
+    height: 150vh; /* Adjust as needed */
   }
   
   .home img {
