@@ -615,11 +615,16 @@ form .form-input {
   /* Adjust padding for various sections */
   
  
-  .gallery,
-  .place {
+  .gallery
+   {
       padding-top: 30px;
       padding-bottom: 50px;
   }
+
+  .place {
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
 
   
     .shortgal{
@@ -634,7 +639,7 @@ form .form-input {
   }
 
   .C1 {
-    padding-top: 50px;
+    padding-top: 30px;
       padding-bottom: 50px;
   }
 
@@ -648,8 +653,10 @@ form .form-input {
   .home img {
     width: 80%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    padding-bottom: 70px;
+    padding-bottom: 100px;
   }
+
+
   
 
   /* Adjust font size for form inputs */
