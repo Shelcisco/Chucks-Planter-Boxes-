@@ -613,38 +613,126 @@ form .form-input {
 /* For screens smaller than 768px (phones) */
 @media (max-width: 768px) {
   /* Adjust padding for various sections */
-  .C1,
+  
+ 
   .gallery,
   .place {
-    padding-top: 30px;
-    padding-bottom: 50px;
+      padding-top: 30px;
+      padding-bottom: 50px;
   }
 
   
-  .Announce{
-    padding-top: 5%;
+    .shortgal{
+      padding-top: 150px;
+      padding-bottom: 300px;
+
+    }
+
+  .Announce {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
-  #Bird{
-    height:auto;
-    width: auto;
+  .C1 {
+    padding-top: 50px;
+      padding-bottom: 50px;
   }
 
-
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
   .home img {
-    width: auto; /* Adjust the width as needed */
+    width: 80%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
-    padding-bottom: 100px;
+    padding-bottom: 70px;
   }
+  
 
   /* Adjust font size for form inputs */
   form .form-input {
-    width: 80%; /* Adjust width of form inputs */
-    font-size: 1rem; /* Reset font size for smaller screens */
+      width: 80%; /* Adjust width of form inputs */
+      font-size: 1rem;
   }
 
   /* Adjust width of buttons */
   .btn {
-    width: 30%; /* Adjust width of buttons */
+      width: 30%; /* Adjust width of buttons */
+  }
+
+  /* Adjust navigation bar width */
+  .topnav {
+      width: 100%; /* Set width to full */
+  }
+
+  /* Style the links inside the navigation bar for smaller screens */
+  .topnav a {
+      font-size: 14px; /* Adjust font size */
+      padding: 10px; /* Adjust padding */
+  }
+
+  /* Adjust layout for place order section */
+  .order {
+      display: flex; /* Ensure it's a flex container */
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center items horizontally */
+  }
+
+
+
+  .content-container {
+      flex-direction: column; /* Change to column layout */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .bird {
+      order: 2; /* Change the order of the image */
+      padding-top: 20px; /* Add padding top */
+      padding-right: 0; /* Remove right padding */
+      text-align: center; /* Center the image */
+  }
+
+  /* Make the bird image width responsive */
+  #Bird {
+    max-width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Add border radius */
+  }
+  
+
+   /* Adjust layout for gallery images */
+   .sgvid {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center;
+  }
+  
+  #GP {
+    max-width: 50%; /* Set a maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Add some margin between images */
+  }
+  
+  
+
+  .fgtitle{
+    padding-top: 30px;
+  }
+
+  /* #Logo{
+    width: 125px;
+    height: 125px;
+  } */
+
+  .text-box {
+    width: 100%;
+    padding: 0 20px; /* Adjust padding as needed */
   }
 }
+
