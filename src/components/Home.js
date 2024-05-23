@@ -7,6 +7,8 @@ import Social from "./Social";
 import Place from "./Place";
 import Gallery from './Gallery';
 
+import P17 from "../assets/P17.png";
+
 
 function Home() {
   
@@ -19,7 +21,7 @@ function Home() {
 
 <img src={Logo} width={500} height={500} alt="Logo"></img>
 
-{/* <Footer></Footer> */}
+
 </div>
 
 <div id="gallery" className="gallery">
