@@ -7,8 +7,6 @@ import Hum from "../assets/46.png";
 export default function Place(){
     return(
         <div className="order">
-            
-            <br></br>
             <div className="content-container">
             <div className="bird">
                     <img src={Hum} alt="Bird" id ="Bird" />
