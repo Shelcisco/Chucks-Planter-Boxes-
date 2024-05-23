@@ -593,7 +593,7 @@ form .form-input {
   }
 
   #Bird{
-    height:350px;
+    height:340px;
     width: auto;
   }
   
@@ -616,8 +616,8 @@ form .form-input {
 
 
   .order {
-    padding-top: 10px;
-    padding-bottom: 70px;
+    padding-top: 40px;
+    padding-bottom: 90px;
 }
 
   
