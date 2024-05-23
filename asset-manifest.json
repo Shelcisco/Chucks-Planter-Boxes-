@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Chucks-Planter-Boxes-/static/css/main.d6a0f64b.css",
-    "main.js": "/Chucks-Planter-Boxes-/static/js/main.6503feda.js",
+    "main.css": "/Chucks-Planter-Boxes-/static/css/main.c4f4d709.css",
+    "main.js": "/Chucks-Planter-Boxes-/static/js/main.98bd1043.js",
     "static/js/787.e08f4277.chunk.js": "/Chucks-Planter-Boxes-/static/js/787.e08f4277.chunk.js",
     "static/media/P2.png": "/Chucks-Planter-Boxes-/static/media/P2.08ca80bb4b5b94943291.png",
     "static/media/P8.png": "/Chucks-Planter-Boxes-/static/media/P8.3a92973a963f6263876b.png",
@@ -26,6 +26,7 @@
     "static/media/P16.png": "/Chucks-Planter-Boxes-/static/media/P16.8e8d29f4abeb3e9fdb43.png",
     "static/media/P17.png": "/Chucks-Planter-Boxes-/static/media/P17.91a3f268d6046f5a9359.png",
     "static/media/P23.png": "/Chucks-Planter-Boxes-/static/media/P23.2be58e624471d4bf163b.png",
+    "static/media/P26.png": "/Chucks-Planter-Boxes-/static/media/P26.4c43aff5c60da769c658.png",
     "static/media/P21.png": "/Chucks-Planter-Boxes-/static/media/P21.94d8d26862dedc814fc9.png",
     "static/media/P19.png": "/Chucks-Planter-Boxes-/static/media/P19.c8ce32f7acfaa44bed70.png",
     "static/media/P24.png": "/Chucks-Planter-Boxes-/static/media/P24.99f172990773793086d6.png",
@@ -33,8 +34,11 @@
     "static/media/P10.png": "/Chucks-Planter-Boxes-/static/media/P10.1bcb1e0ce3cb716dd606.png",
     "static/media/P14.png": "/Chucks-Planter-Boxes-/static/media/P14.be8c4ab6c3dad046319c.png",
     "static/media/P25.png": "/Chucks-Planter-Boxes-/static/media/P25.e18c32573e712b911aca.png",
-    "static/media/Cork.png": "/Chucks-Planter-Boxes-/static/media/Cork.44e53497aaa4a11b62b0.png",
     "static/media/fa-solid-900.ttf": "/Chucks-Planter-Boxes-/static/media/fa-solid-900.45a265d0f07b31cde85f.ttf",
+    "static/media/51.png": "/Chucks-Planter-Boxes-/static/media/51.a3bf3c265b893553c17d.png",
+    "static/media/48.png": "/Chucks-Planter-Boxes-/static/media/48.b12664e775d92f8b3ac2.png",
+    "static/media/50.png": "/Chucks-Planter-Boxes-/static/media/50.b5f52d611591cfb25756.png",
+    "static/media/49.png": "/Chucks-Planter-Boxes-/static/media/49.9a1560a433391ffab64d.png",
     "static/media/fa-brands-400.ttf": "/Chucks-Planter-Boxes-/static/media/fa-brands-400.6205fd00fb1b573e9f0f.ttf",
     "static/media/fa-solid-900.woff2": "/Chucks-Planter-Boxes-/static/media/fa-solid-900.fb8184add5a3101ad0a3.woff2",
     "static/media/27.png": "/Chucks-Planter-Boxes-/static/media/27.9e5f775460a4ff926ac4.png",
@@ -91,12 +95,12 @@
     "static/media/fa-v4compatibility.ttf": "/Chucks-Planter-Boxes-/static/media/fa-v4compatibility.2eb7b3ef25042305f3ff.ttf",
     "static/media/fa-v4compatibility.woff2": "/Chucks-Planter-Boxes-/static/media/fa-v4compatibility.b3049b13a93f07e026fc.woff2",
     "index.html": "/Chucks-Planter-Boxes-/index.html",
-    "main.d6a0f64b.css.map": "/Chucks-Planter-Boxes-/static/css/main.d6a0f64b.css.map",
-    "main.6503feda.js.map": "/Chucks-Planter-Boxes-/static/js/main.6503feda.js.map",
+    "main.c4f4d709.css.map": "/Chucks-Planter-Boxes-/static/css/main.c4f4d709.css.map",
+    "main.98bd1043.js.map": "/Chucks-Planter-Boxes-/static/js/main.98bd1043.js.map",
     "787.e08f4277.chunk.js.map": "/Chucks-Planter-Boxes-/static/js/787.e08f4277.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6a0f64b.css",
-    "static/js/main.6503feda.js"
+    "static/css/main.c4f4d709.css",
+    "static/js/main.98bd1043.js"
   ]
 }
