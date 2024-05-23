@@ -8,7 +8,6 @@ import Sasvid from "../assets/Sasvid.mp4";
 import Depth from "../assets/12Deep.mp4";
 import Crown from "../assets/Crown.mp4";
 import Flamingo from "../assets/Flamingo.mp4";
-import P1 from "../assets/1.png";
 import P2 from "../assets/P2.png";
 import P3 from "../assets/P3.png";
 import P4 from "../assets/P4.png";
@@ -33,7 +32,12 @@ import P22 from "../assets/P22.png";
 import P23 from "../assets/P23.png";
 import P24 from "../assets/P24.png";
 import P25 from "../assets/P25.png";
-import Cork from "../assets/Cork.png";
+
+import P26 from "../assets/P26.png";
+
+
+
+
 
 
 
@@ -60,9 +64,10 @@ const Fullgall = () => {
     { id: 6, type: "photo", url: P6},
     { id: 7, type: "photo", url: P7},
     
-    
+   
     { id: 9, type: "photo", url: P9},
     { id: 10, type: "photo", url: P10},
+    { id: 26, type: "photo", url: P26},
     { id: 11, type: "photo", url: P11},
     { id: 12, type: "photo", url: P12},
     
@@ -75,10 +80,11 @@ const Fullgall = () => {
     { id: 19, type: "photo", url: P19},
     { id: 20, type: "photo", url: P20},
     { id: 21, type: "photo", url: P21},
-    { id: 1, type: "photo", url: P1},
     { id: 23, type: "photo", url: P23},
     { id: 24, type: "photo", url: P24},
     { id: 25, type: "photo", url: P25},
+
+
     { id: 104, type: "video", url: Crown},
     // Add more items here
     { id: 103, type: "video", url: Flamingo},

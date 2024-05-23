@@ -50,6 +50,10 @@ import B40 from "../assets/40.png"
  import B45 from "../assets/45.png"
  import B46 from "../assets/46.png"
   import B47 from "../assets/47.png"
+  import B48 from "../assets/48.png"
+  import B49 from "../assets/49.png"
+  import B50 from "../assets/50.png"
+  import B51 from "../assets/51.png"
 
 
 
@@ -248,6 +252,22 @@ function Stencil() {
         text: "47",
         image: B47,
       },
+      {
+        text: "48",
+        image: B48,
+      },
+      {
+        text: "49",
+        image: B49,
+      },
+      {
+        text: "50",
+        image: B50,
+      },
+      {
+        text: "51",
+        image: B51,
+      },
 
 
       // Add more ojects as needed
@@ -256,8 +276,15 @@ function Stencil() {
     const [currentStencilIndex, setCurrentStencilIndex] = useState(0);
 
     const goToStencil = (index) => {
-      setCurrentStencilIndex(index);
+      if (index < 0) {
+        setCurrentStencilIndex(stencils.length - 1); // Wrap around to the last stencil
+      } else if (index >= stencils.length) {
+        setCurrentStencilIndex(0); // Wrap around to the first stencil
+      } else {
+        setCurrentStencilIndex(index);
+      }
     };
+    
   
     const generatePreviewImages = () => {
       const startIndex = Math.max(0, currentStencilIndex - 5);
