@@ -560,10 +560,14 @@ form .form-input {
 /* For screens larger than 1200px (larger monitors) */
 @media (min-width: 1200px) {
   /* Adjust padding for various sections */
-  .C1,
-  .place {
+  .C1 {
     padding-top: 70px; /* Adjust as needed */
     padding-bottom: 200px; /* Adjust as needed */
+  }
+
+  .place {
+    padding-top: 150px; /* Adjust as needed */
+    padding-bottom: 205px; /* Adjust as needed */
   }
 
   
