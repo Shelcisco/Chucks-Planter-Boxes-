@@ -10,7 +10,7 @@ function Navbar() {
       <ScrollLink to="gallery" smooth={true} duration={500}>
         Gallery
       </ScrollLink>
-      <ScrollLink to="place" smooth={true} duration={500}>
+      <ScrollLink to="place" smooth={true} duration={500} offset={75}>
         Orders
       </ScrollLink>
       <ScrollLink to="stencil" smooth={true} duration={500}>
